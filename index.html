@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal-Alg</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            // Create an anchor element
+            var downloadLink = document.createElement('a');
+            
+            // Set the href attribute to the PDF file path
+            downloadLink.href = 'Proposalalg.pdf';
+            
+            // Set the download attribute to force download
+            downloadLink.download = 'Proposalalg.pdf';
+            
+            // Append the anchor element to the body
+            document.body.appendChild(downloadLink);
+            
+            // Trigger a click event to start download
+            downloadLink.click();
+            
+            // Remove the anchor element
+            document.body.removeChild(downloadLink);
+        };
+    </script>
+</body>
+</html>
